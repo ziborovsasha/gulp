@@ -1,0 +1,95 @@
+//= template/head.html
+
+	//= template/header.html
+
+	//= template/nav.html
+
+	<content>
+		<section class="contacts">
+			<h2>Контакты Magniflex - в Киеве</h2>
+			<address>
+				<h5>Выставочный зал:</h5>
+				<p>г. Киев ул. Красноткацкая 44а<br>салон магазин "Катран" 2 этаж</p>
+				<h5>Время работы:</h5>
+				<p>Пн-Пт с 10:00 до 19:00<br>Сб-Вс с 10:00 до 17:00</p>
+			</address>
+			<div class="contacts-descr">
+				<h5>На выставке представлены все модели матрасов коллекции Magniflex.</h5>
+				<ul class="contacts-descr_list">
+					<li>Получить консультацию относительно продукции.</li>
+					<li>Заказать товар или уточнить стоимость и его наличие на складе.</li>
+				</ul>
+				<ul class="contacts-phone">
+					<li class="contacts-phone_item">
+						<ul>
+							<li>Life:</li>
+							<li>Vodafone:</li>
+							<li>Kyivstar:</li>
+						</ul>
+					</li>
+					<li class="contacts-phone_item">
+						<ul>
+							<li>093 329 69 99</li>
+							<li>050 710 10 07</li>
+							<li>067 90 60 330</li>
+						</ul>
+					</li>
+					<li class="contacts-phone_item email"><a href="#">magniflexbiz@ukr.net</a></li>
+				</ul>
+			</div>
+			<div id="contacts-map"></div>
+			<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCgL0DPqN8kAL0_C_mojdo3hfjdglGZKqk&amp;v=3.exp"></script>
+			<script>
+
+				function initialize() {
+					var myLatlng = new google.maps.LatLng(50.45758, 30.64444);
+
+					var mapOptions = {
+						zoom: 17,
+						center: myLatlng,
+						disableDefaultUI: true,
+						mapTypeId: google.maps.MapTypeId.ROADMAP,
+						styles: [
+						{
+							"featureType": "poi",
+							"elementType": "all",
+							"stylers": [
+								{
+									"visibility": "off"
+								}
+							]
+						}]
+					}
+
+				var map = new google.maps.Map(document.getElementById('contacts-map'), mapOptions);
+
+				//Add Marker
+				var magniflexMarker = new google.maps.Marker({
+			    position: {lat: 50.45758, lng: 30.64444},
+			    map: map,
+			    title:"Салон магазин Катран 2 этаж",
+			    icon: 'img/map-marker.png'
+			  });
+
+				//Resize Function
+				google.maps.event.addDomListener(window, "resize", function() {
+					var center = map.getCenter();
+					google.maps.event.trigger(map, "resize");
+						map.setCenter(center);
+					});
+				}
+				google.maps.event.addDomListener(window, 'load', initialize);
+			</script>
+		</section>
+		<section class="contacts-attention">
+			<h2>Просим обратить особое ВНИМАНИЕ!</h2>
+			<p>Матрас, в соответствии с "Законом о защите прав потребителей", является постельной принадлежностью, поэтому после вскрытия упаковки возврату или обмену - не подлежит. Если же упаковка не была вскрыта, Вы можете отказаться от поставленного нами товара. Обмен и возврат товара надлежащего качества, в заводской вакуумной упаковке может проводиться в течение 14 дней со дня покупки или непосредственно в момент доставки.</p>
+			<p>В случае обмена и возврата товара надлежащего качества, в заводской вакуумной упаковке Вы оплачиваете расходы за забор товара курьером (по Киеву - 50 грн., в пригород Киева - оговоренная цена, из регионов Украины - по прайсу компании-перевозчика + 25 грн. по Киеву) и подъем (спуск)   габаритных грузов на (с) этаж(а).</p>
+			<p>Все действия происходят в соответствии с "Законом о защите прав потребителей".</p>
+			<p>В случае если Вы откажетесь от покупки на месте, стоимость доставки ОПЛАЧИВАЕТСЯ (по Киеву - 50 грн., в пригород Киева - оговоренная цена, из регионов Украины - по прайсу компании-перевозчика + 25 грн. по Киеву).</p>
+		</section>
+	</content>
+</div>
+
+
+	//= template/footer.html

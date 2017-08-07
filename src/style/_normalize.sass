@@ -1,0 +1,116 @@
+/*-------------------------------- */
+/*--                            -- */
+/*--     1. Fonts               -- */
+/*--     2. Normalize           -- */
+/*--     3. Main                -- */
+/*--       3.1 Icons            -- */
+/*--       3.2 Buttons          -- */
+/*--       3.3 Forms            -- */
+/*--     4. Header              -- */
+/*--     5. Content             -- */
+/*--     6. Footer              -- */
+/*--     7. Media               -- */
+/*--                            -- */
+/*-------------------------------- */
+
+
+/* 1. FONTS */
+/* ================================================ */
+
+@font-face
+    font-family: 'Roboto'
+    src: url('../fonts/subset-Roboto-Light.eot')
+    src: url('../fonts/subset-Roboto-Light.eot?#iefix') format('embedded-opentype'), url('../fonts/subset-Roboto-Light.woff2') format('woff2'), url('../fonts/subset-Roboto-Light.woff') format('woff'), url('../fonts/subset-Roboto-Light.ttf') format('truetype')
+    font-weight: 300
+    font-style: normal
+@font-face
+    font-family: 'Roboto'
+    src: url('../fonts/subset-Roboto-Medium.eot')
+    src: url('../fonts/subset-Roboto-Medium.eot?#iefix') format('embedded-opentype'), url('../fonts/subset-Roboto-Medium.woff2') format('woff2'), url('../fonts/subset-Roboto-Medium.woff') format('woff'), url('../fonts/subset-Roboto-Medium.ttf') format('truetype')
+    font-weight: 500
+    font-style: normal
+
+/* 2. NORMALIZE
+/* ================================================ */
+
+html, body, div, span, object, iframe, h1, h2, h3, h4, h5, h6,
+p, blockquote, pre, a, abbr, address, cite, code, del, dfn, em,
+img, ins, kbd, q, samp, small, strong, sub, sup, var, b, i, hr,
+dl, dt, dd, ol, ul, li, fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, figure, figcaption,
+menu, footer, header, nav, section, summary, time, mark, audio, video
+    margin: 0
+    padding: 0
+    border: 0
+/* HTML5 display-role reset for older browsers*/
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section
+    border-style: none
+    vertical-align: top
+input, textarea, select
+    padding: 0
+    margin: 0
+    font: 14px/1 'Roboto', Helvetica, sans-serif
+    vertical-align: middle
+    color: #000
+    outline: none
+    border-style: none
+    border-radius: 0
+    -moz-border-radius: 0
+    -webkit-border-radius: 0
+    -webkit-appearance: none
+textarea
+    resize: vertical
+label[for], input[type=checkbox], input[type=radio],
+input[type=submit], button, select
+    cursor: pointer 
+ul
+    list-style: none
+mark
+  background: none
+a
+    color: #000
+    text-decoration: none
+a:hover
+    text-decoration: underline
+h2, h3, h4, h5, h6
+    font-weight: 500
+    line-height: normal
+    margin-bottom: 20px
+h2
+    font-size: 24px
+    text-transform: uppercase
+    &:after
+        content: ""
+        display: block
+        height: 3px
+        width: 50px
+        margin-top: 10px
+        background-color: #004562
+h3
+    font-size: 20px
+h4
+    font-size: 18px
+h5
+    font-size: 16px
+h6
+    font-size: 12px
+p
+    margin: 0 0 18px
+.clr
+    &:after
+        content: " "
+        display: table
+        clear: both
+/* main rules */
+body
+    min-width: 320px
+    font-family: 'Roboto', sans-serif
+    font-size: 15px
+    line-height: 20px
+    font-weight: 300
+    background-color: #fafafa
+    -webkit-font-smoothing: antialiased
+    -moz-osx-font-smoothing: grayscale
+    color:#393939
+    box-sizing: border-box

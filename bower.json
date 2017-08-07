@@ -1,0 +1,20 @@
+{
+  "name": "magniflex.biz.ua",
+  "description": "",
+  "main": "index.js",
+  "authors": [
+    "Ziborov Alexander ziboralexander@gmail.com"
+  ],
+  "license": "ISC",
+  "homepage": "",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "slick-carousel": "^1.6.0"
+  }
+}
